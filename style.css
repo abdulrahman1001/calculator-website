@@ -1,71 +1,30 @@
-* {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  background-color: aqua;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-}
-
-.calc {
-  background-color: black;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 400px; /* Limit the width for better mobile viewing */
-  width: 90%; /* Take up 90% of the available width */
-  margin: 0 auto; /* Center the calculator */
-}
-
-.calc form input {
-  border: 0;
-  outline: 0;
-  background: transparent;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: #fff;
-  font-size: 20px;
-  margin: 10px;
-  color: #fff;
-  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-form .dis {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 0;
-}
-
-form .dis input {
-  text-align: right;
-  flex: 1;
-  font-size: 45px;
-  box-shadow: none;
-}
-
-form input.eq {
-  width: 145px;
-}
-
-/* Media Query for Improved Mobile Responsiveness */
-@media (max-width: 600px) {
-  .calc {
-    padding: 20px;
-  }
-
-  form .dis input {
-    font-size: 30px;
-  }
-  
-  form input.eq {
-    width: auto;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mobile Phones</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="phone">Samsung Galaxy S21 FE</div>
+        </div>
+        <div class="row">
+            <div class="phone">iPhone 10</div>
+            <div class="phone">iPhone 11</div>
+        </div>
+        <div class="row">
+            <div class="phone">iPhone 12</div>
+            <div class="phone">iPhone 13</div>
+        </div>
+        <div class="row">
+            <div class="phone">Placeholder</div>
+        </div>
+        <div class="calc">
+            <!-- Your calculator content goes here -->
+        </div>
+    </div>
+</body>
+</html>
