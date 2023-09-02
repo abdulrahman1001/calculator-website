@@ -6,7 +6,7 @@
 }
 
 .container {
-  background-color:aqua;
+  background-color: aqua;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -15,9 +15,12 @@
 }
 
 .calc {
-  background-color: blueviolet;
+  background-color: black;
   padding: 30px;
   border-radius: 10px;
+  max-width: 400px; /* Limit the width for better mobile viewing */
+  width: 90%; /* Take up 90% of the available width */
+  margin: 0 auto; /* Center the calculator */
 }
 
 .calc form input {
@@ -52,13 +55,8 @@ form input.eq {
   width: 145px;
 }
 
-/* Media Query for Responsive Design */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
+/* Media Query for Improved Mobile Responsiveness */
+@media (max-width: 600px) {
   .calc {
     padding: 20px;
   }
@@ -66,7 +64,7 @@ form input.eq {
   form .dis input {
     font-size: 30px;
   }
-
+  
   form input.eq {
     width: auto;
   }
